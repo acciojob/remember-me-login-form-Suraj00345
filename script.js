@@ -17,7 +17,7 @@ submitBtn.addEventListener('click',(event)=>{
    localStorage.setItem('users', JSON.stringify(users));
   }
   else if(JSON.parse(localStorage.getItem('users'))){
-  	let savedUser =	JSON.parse(localStorage.getItem('users'));
+  	let savedUser = JSON.parse(localStorage.getItem('users'));
     savedUser.forEach((user)=>{
       if(user.UserName === username.value ){      
 	    loginBtn.removeAttribute('hidden')
